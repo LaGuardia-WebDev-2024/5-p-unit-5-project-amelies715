@@ -30,8 +30,22 @@ Select TWO Additional Features to Add
     padding: 10px;
     margin: auto;
     width: fit-content;
-
-  }
+    overflow: hidden;
+    border-right: .15em brown;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .11;
+    animation: 
+    typing 3.5s steps (40, end),
+  ; }
+  @keyframes typing {
+    from {width: 0}
+    to {width: 100%}
+    }
+    @keyframes blink-caret {
+      from, to {border-color: transparent;}
+      50% {border-color: brown;}
+    }
   .intro {
     font-family:cursive;
     text-align: center;
@@ -110,7 +124,7 @@ Select TWO Additional Features to Add
   .addison {
      text-align: center;
     background-color:rgb(238, 209, 45);
-    
+  
     
     margin: auto;
     width: fit-content;
@@ -129,6 +143,37 @@ Select TWO Additional Features to Add
     height: 180px;
     overflow-y: auto;
     justify-content: center;
+  }
+  .photo-gallery {
+  
+    text-decoration: rgb(110, 17, 231);
+    color: rgb(250, 238, 183);
+    margin: auto;
+    border-left-style: groove;
+    border-right-style: groove;
+    border-top-style: dotted;
+    border-bottom-style: dotted;
+  }
+  .photo {
+    width: 200px;
+    margin: 20px;
+    border: 5px solid brown;
+    padding: 3px;
+  }
+  div {
+    display: flex;
+    border-style: double;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 20px;
+    background-color: brown;
+
+    transition: all 1s ease-in-out;
+  }
+  div-hover {
+    transform: scale(200%) rotate(360deg);
+  }
+
     </style>
 </head>
 <body style="background-image: url(https://i.pinimg.com/474x/08/5d/ff/085dfff78443187594544695922295ed.jpg);">
@@ -139,7 +184,7 @@ Select TWO Additional Features to Add
 <p class="intro">Here are a few of my short reviews :)</p> <br>
 <img
 src="https://i.pinimg.com/originals/a4/39/76/a43976d33f840ce268cb5c97bea6a45a.gif" > <br>
-<div id="info"> <br>
+ <br>
 <h2 class="dijon"><strong><em>"Baby"</em></strong>Dijon (2025)</h2><br>
 <img class="pic"
 src="https://upload.wikimedia.org/wikipedia/en/b/b9/Dijon_Baby.jpeg"
@@ -177,5 +222,23 @@ was NOT expecting her to eat down with this album<br>
 It has such an iconic sound and has some insanely catchy songs<br>
 I wouldnt say its amazing SONG BY SONG, but go off Addsion <strong><em>💋</em></strong></p>
 <br>
+<br>
+<div id="info">I listened to so so many more...</div>
+<h2 class="photo-gallery">Some more great ones to mention:
+<img class="photo"
+src="https://madworldrecordstx.com/cdn/shop/files/bon-iver-sable-fable-new-cd-893314.jpg?v=1745537016"
+>
+<img class="photo"
+src="https://preview.redd.it/lordes-most-recent-album-cover-v0-i3f3538fx2ye1.jpeg?auto=webp&s=c9180c2696f8687ae0a0a51f090d0c8f38ffd381"
+>
+<img class="photo"
+src="https://f4.bcbits.com/img/a2991836176_16.jpg"
+>
+<img class="photo"
+src="https://media.pitchfork.com/photos/68a7746536ef408c4fab9097/1:1/w_450%2Cc_limit/Daniel-Caesar-Son-of-Spergy.jpeg"
+>
+</h2>
+
 </body>
+
 </html>
